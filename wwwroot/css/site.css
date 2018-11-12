@@ -33,6 +33,11 @@ footer {
 		color: #3090C7;
 		border-color: #3090C7;
 	}
+	
+	.nav-btn:hover {
+ 		color: #3090C7;
+		border-color: #3090C7;
+	}
 
 .learn-more {
 	text-align: middle;
