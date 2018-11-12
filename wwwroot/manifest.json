@@ -5,8 +5,8 @@
   "background_color": "#3090C7",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "../snwflk",
-  "start_url": "../snwflk/app.html",
+  "Scope": "/snwflk",
+  "start_url": "/snwflk/app.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
