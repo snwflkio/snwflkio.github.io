@@ -1,1 +1,11 @@
-Test
+<html>
+	<head>
+		<link href="../wwwroot/manifest.json" rel="manifest">
+	<head>
+	
+	<script>
+		if('serviceWorker' in navigator) {
+ 			navigator.serviceWorker.register('../wwwroot/ServiceWorker.js');
+		}
+	</script>
+</html>
