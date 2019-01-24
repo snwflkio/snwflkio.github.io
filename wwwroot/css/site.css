@@ -22,51 +22,45 @@ footer {
 	opacity: 0.7;
 }
 
-.nav-btn {
-	font-size: 3.5vh;
-	color: #848484;
-	border-color: lightgrey;
-	border-radius: 8px;
+.load {
+	height: 100%;
+	top: 50%;
 }
 
-	.nav-btn:hover {
-		color: #3090C7;
-		border-color: #3090C7;
-	}
-	
-	.nav-btn:hover {
- 		color: #3090C7;
-		border-color: #3090C7;
-	}
-
-.learn-more {
-	text-align: middle;
-	border-radius: 15px;
-	font-size: 4vh;
+.snowflake {
+	width: 6vw;
+	height: 6vw;
+	margin-bottom: 1vw;
 }
 
-.jumbotron {
-	padding-left: 15px;
-}
-
-.banner	{
-	margin-top: 5vh;
-	padding-bottom: 600px;
-	background:url(../img/couching.jpg) no-repeat;
-	background-size: cover contain;
-}
-
-@media only screen {
-	.banner-text {
- 		font-size: 0.2vh;
-	}
-}
-.banner-text {
-	font-size: 5vh;
+.subtitle {
+	width: 100%;
 	text-align: center;
+	font-size: 2vw;
+	font-weight: 300;
 }
 
-.jumbo-text {
-	font-size: 3vh;
-	padding-left: 25px;
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: 7vw;
+}
+
+.section-title {
+	width: 100%;
+	text-align: center;
+	font-size: 3vw;
+}
+
+hr {
+	width: 80%;
+	border-top: 1px solid gray;
+}
+
+.section-a {
+	
+}
+
+.section-b {
+	
 }
