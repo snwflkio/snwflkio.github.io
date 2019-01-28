@@ -13,12 +13,51 @@ footer {
 	width: 100%;
 }
 
+select {
+	border-radius: 5px;
+	background-color: transparent;
+	outline: blue;
+	height: 4vh;
+	width: 8vw;
+}
+
+#submit-form {
+	background-color: transparent;
+	outline: blue;
+	border-radius: 4px;
+	width: 10vw;
+	height: 8vh;
+			
+}
+
 .form {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 5vh;
 	justify-content: center;
 	align-content: center;
+}
+
+.beta-btn {
+	background-color: rgba(64, 199, 249, 0.5);
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	height: 8vh;
+	width: 12vw;
+	padding: 15px 7px 15px 7px;
+	margin-bottom: 5vh;
+	text-decoration: none;
+	text-color: black;
+}
+
+.beta-btn:hover {
+	text-decoration: none;
+	text-color: black;
+}
+.beta-btn:focus {
+	background-color: rgba(64, 249, 206, 0.5);
+	text-decoration: none;
 }
 
 div > div > label {
