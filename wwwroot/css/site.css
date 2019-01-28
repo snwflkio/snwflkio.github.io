@@ -13,6 +13,27 @@ footer {
 	width: 100%;
 }
 
+.form {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 5vh;
+	justify-content: center;
+	align-content: center;
+}
+
+div > div > label {
+	font-size: 2vw;
+}
+
+div > div > input {
+	border-radius: 5px;
+}
+
+div > div > input:focus {
+	outline: teal;
+}
+
+
 .copyright {
 	margin: auto;
 	text-align: center;
@@ -70,11 +91,12 @@ hr {
 }
 
 .main-section {
-	font-size: 1vw;	
+	font-size: 1vw;
+	height: 100%;
 }
 
 .section {
-	width: 100%;		
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
