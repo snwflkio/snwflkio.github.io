@@ -39,9 +39,9 @@
     </header>
 	<hr/>
 
-	<div class="main-section">
+	<div class="main-section" style="padding-bottom: 50px;">
 		<div class="section-title">
-			Utilizing the latest in web technology
+			Utilizing the Latest in <span style="color: #57B7A9">Web Technology</span>
 		</div>
 		Progressive Web Apps are the new standard in web technology. PWAs offer the ability to design and create responsive mobile applications without any prior developer experience. In the same way that Wix allows users to create sleek, custom websites, SnowFlake extends this idea to mobile applications. Similar to other programs, SnowFlake bases it's design off of traditional drag-and-drop approach. This let's the users quickly and easily create their mobile applications for business or personal use. Because Progressive Web Apps are served over the internet, updates to a user's app are deployed instantly. In addition to easy design and creation, users are also able to control the functionality of their apps through a simple drag-and-drop programming language. 
 		<br/><br/> SnowFlake gives people the power to easily create mobile applications for personal or business use without the need of a developer or having to go through an app store.
@@ -55,7 +55,7 @@
 	<hr/>
 	<div class="section">
 		<div class="section-lg">
-		<div class="section-title-left">Benefits for Business</div>
+		<div class="section-title-left">Benefits for <span style="color: #A142DE">Business</span></div>
 			Since the applications are designed and hosted through the web, they are easily accessible through URLs that can be encoded into QR Codes. Most smartphones has QR Code reading ability, for businesses this means that people can quickly download your application without having to go through an app store. Each QR Code is generated when your app is published to the SnowFlake servers. The QR Code will always direct people who scan it to your app, and can download it from the main page you design. Updates that are made to the app are deployed instantly to all downloaded apps, making any changes to your app appear instantly to your customers.
 		</div>
 
@@ -76,14 +76,14 @@
 		</div>
 
 		<div class="section-lg">
-				<div class="section-title-right">Personal Use Perks</div>
+				<div class="section-title-right">Personal Use <span style="color: #DE4277">Perks</span></div>
 				Often times, apps can promote productivity in day-to-day life. Calendars, alarms, and email apps provide the ability keep our lives organized. SnowFlake allows people with no programming experience to create their own mobile applications to help improve their own life. From a reminders app, to a motiviational quote generator, users are encouraged to use their creativity to create apps that are useful for them. The app will be hosted on the SnowFlake server, and be accessed and downloaded via URL or QR Code.
 		</div>
 	</div>
 
 	<hr/>
 	<div class="main-section">
-		<div class="section-title">See it in Action</div>
+		<div class="section-title">See it in <span style="color: #EB8F12">Action</div></div>
 		<center>
 <iframe width="900" height="506" src="https://www.youtube.com/embed/lGFUcvxrMxI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</center>
@@ -121,6 +121,15 @@
 					<button type="submit" id="submit-form"/>Sign Up</button>
 				</center>
 			</form>
+		</div>
+
+		<div id="thanks" style="display: none;">
+			<center>
+				<div class="section-title">
+					Thanks! We'll be in touch!
+				</div>
+			</center>
+		</div>
 	</div>
 	<hr/>
 </body>
@@ -148,7 +157,12 @@ $('#submit-form').on('click', function(e) {
     method: "GET",
     dataType: "json",
     data: $form.serializeObject()
-  })});
+  })
+  document.getElementById("sign-up").reset();
+  document.getElementById("sign-up").style.display = "none";
+  document.getElementById("thanks").style.display = "block";
+  window.scrollTo(0,0);
+ });
 
 </script>
 
