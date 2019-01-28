@@ -31,10 +31,15 @@ select {
 	border: none;
 }
 
+
 #submit-form:focus {
 	background-color: #30C50F;
 }
 
+.phone-pic {
+	width: 15vw;
+	height: 55vh;
+}
 .form {
 	display: flex;
 	flex-direction: row;
@@ -175,6 +180,16 @@ input {
 		margin-bottom: 1vh;
 	}
 
+	.phone-pic {
+		width: 35vw;
+		height: 35vh;
+	}
+
+	.video {
+		width: 10vh;
+		height: 6vh;
+	}
+
 	.title {
 		font-size: 12vw;
 	}
@@ -203,6 +218,18 @@ input {
 
 	.section {
 		font-size: 3vw;
+	}
+
+	#submit-form {
+		width: 25vw;
+	}
+
+	select {
+		width: 15vw;
+	}
+
+	div > label {
+		font-size: 10vw;
 	}
 
 }
