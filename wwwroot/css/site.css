@@ -40,6 +40,7 @@ select {
 	width: 15vw;
 	height: 55vh;
 }
+
 .form {
 	display: flex;
 	flex-direction: row;
@@ -151,6 +152,7 @@ hr {
 	font-size: 1.5vw;
 }
 
+
 label {
 	font-size: 1.5vw !important;
 }
@@ -186,8 +188,8 @@ input {
 	}
 
 	.video {
-		width: 10vh;
-		height: 6vh;
+		width: 40vh;
+		height: 25vh;
 	}
 
 	.title {
