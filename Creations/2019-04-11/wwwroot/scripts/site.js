@@ -20,21 +20,20 @@ function drop(ev) {
   var design = document.getElementById("PLACEHOLDER");
   var width = window.getComputedStyle(design).width;
   console.log(data)
-  ev.target.appendChild(document.getElementById(data[0]));
- var item = document.getElementById(data[0]);
- item.style.position = "fixed";
-	
- if(ev.clientX > screen.width)
- {
-	ev.clientX = screen.width - 100;
- }
- 
- item.style.left = ((ev.clientX) + 'px');
- item.style.top = (ev.clientY + 'px');
+  var item = document.getElementById(data[0]);
+  item.style.position = "absolute";
+     
+  if(ev.clientX > screen.width)
+  {
+     ev.clientX = screen.width - 100;
+  }
+  
+  item.style.left = ((ev.clientX) + 'px');
+  item.style.top = (ev.clientY + 'px');
 
 
-  document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";
-  return false;
+   document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";
+   return false;
 }
 
 function getInfo()
