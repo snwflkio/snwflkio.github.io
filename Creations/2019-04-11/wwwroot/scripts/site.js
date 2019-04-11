@@ -21,14 +21,10 @@ function drop(ev) {
   var width = window.getComputedStyle(design).width;
   console.log(data)
   var item = document.getElementById(data[0]);
+  ev.target.appendChild(item);
   item.style.position = "absolute";
-     
-  if(ev.clientX > screen.width)
-  {
-     ev.clientX = screen.width - 100;
-  }
   
-  item.style.left = ((ev.clientX) + 'px');
+  item.style.left = ((ev.clientX - width.replace("px", "")) + 'px');
   item.style.top = (ev.clientY + 'px');
 
 
