@@ -40,18 +40,6 @@ div.block + div.block {
 		max-width: 2.5vw;
 }
 
-.component {
-	position: inherit;
-}
-
-.design-container {
-	position: relative;
-	width: 50%;
-	max-width: 50%;
-	max-height: 100%;
-}
-
-
 .location {
 	align-content: center;
 	vertical-align: middle;
