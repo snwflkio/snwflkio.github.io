@@ -41,9 +41,15 @@ div.block + div.block {
 }
 
 .component {
-	position: absolute;
-	margin-bottom: 15px;
+	position: inherit;
 }
+
+.design-container {
+	position: relative;
+	width: 50%;
+	height: 100%;
+}
+
 
 .location {
 	align-content: center;

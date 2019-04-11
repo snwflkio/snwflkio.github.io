@@ -17,17 +17,15 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text").split(',');
+  var design = document.getElementById("PLACEHOLDER");
+  var width = window.getComputedStyle(design).width;
   console.log(data)
   ev.target.appendChild(document.getElementById(data[0]));
- // ev.target.innerHTML = document.getElementById(data).innerHTML;
  var item = document.getElementById(data[0]);
- console.log(data[1])
- console.log(data[2])
- item.style.left = (ev.clientX + 'px');
+ item.style.position = "absolute";
+ item.style.left = ((ev.clientX - width.replace("px", "")) + 'px');
  item.style.top = (ev.clientY + 'px');
 
- console.log(item.style.left)
- console.log(item.style.top)
 
   document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";
   return false;
