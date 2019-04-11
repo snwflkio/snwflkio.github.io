@@ -47,7 +47,8 @@ div.block + div.block {
 .design-container {
 	position: relative;
 	width: 50%;
-	height: 100%;
+	max-width: 50%;
+	max-height: 100%;
 }
 
 
