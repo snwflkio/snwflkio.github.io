@@ -22,9 +22,9 @@ function drop(ev) {
   console.log(data)
   var item = document.getElementById(data[0]);
   ev.target.appendChild(item);
-  item.style.position = "absolute";
+  item.style.position = "relative";
   
-  item.style.left = ((ev.clientX - width.replace("px", "")) + 'px');
+  item.style.left = ((ev.clientX - width.replace("px","")) + 'px');
   item.style.top = (ev.clientY + 'px');
 
 
