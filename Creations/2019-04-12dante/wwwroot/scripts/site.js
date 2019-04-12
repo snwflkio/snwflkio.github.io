@@ -9,7 +9,7 @@ function drag(ev) {
   var leftPos = style.getPropertyValue("left");
   if(topPos == "auto") topPos = 0;
   if(leftPos == "auto") topPos = 0;
-  console.log(topPos + " " + leftPos)
+
   var data = ev.target.id + "," + topPos + "," + leftPos
   ev.dataTransfer.setData("text", data);
 }
@@ -21,15 +21,17 @@ function drop(ev) {
   var design = document.getElementById("section-column");
   var header = document.getElementById("header");
   var width = window.getComputedStyle(design).width;
-  var height = window.getComputedStyle(design).height;
+  var height = window.getComputedStyle(header).height;
   var item = document.getElementById(data[0]);
 
   ev.target.appendChild(item);
+
   item.style.position = "absolute";
   item.style.display = "inline";
+
   
   item.style.left = ((ev.clientX - width.replace("px","")  - 50) + 'px');
-  item.style.top = ((ev.clientY - header.replace("px","")) + 'px');
+  item.style.top = ((ev.clientY - height.replace("px","")) + 'px');
 
   document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";
   return false;
