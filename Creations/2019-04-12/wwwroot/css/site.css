@@ -12,14 +12,14 @@
 
 .section-column {
 	display: flex;
-	width: 75%;
+	width: 65%;
 	flex-direction: column;
 	horizontal-align: center;
 }
 
 .line {
 	height: 100%;
-	width: 0.5%;
+	width: 2%;
 	border-left: thick solid black;
 }
 
@@ -45,9 +45,12 @@ div.block + div.block {
 }
 
 .design-container {
-	position: relative;
+	position: absolute;
+	top: 0%;
+	left: 65%;
+	width: 35%;
 	height: 100%;
-	width: 25%;
+	border: 2px solid slategray;
 }
 
 
@@ -71,7 +74,7 @@ input {
 }
 
 .btn {
-	width: 25vw;
+	width: 15vw;
 }
 
 nav {
@@ -87,4 +90,6 @@ nav {
 }
 
 .editable {
+	width: 15vw;
+	max-width: 15vw;
 }
