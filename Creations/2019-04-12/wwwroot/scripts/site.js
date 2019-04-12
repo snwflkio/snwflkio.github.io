@@ -17,7 +17,7 @@ function drag(ev) {
 function drop(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text").split(',');
-  var design = document.getElementById("PLACEHOLDER");
+  var design = document.getElementById("section-column");
   var width = window.getComputedStyle(design).width;
   console.log(data)
   var item = document.getElementById(data[0]);
