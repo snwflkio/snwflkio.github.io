@@ -23,9 +23,10 @@ function drop(ev) {
   var item = document.getElementById(data[0]);
   ev.target.appendChild(item);
   item.style.position = "relative";
+  item.style.display = "inline";
   
-  item.style.left = ((ev.clientX - width.replace("px","")) + 'px');
-  item.style.top = (ev.clientY + 'px');
+  item.style.left = ((ev.clientX - width.replace("px","")  - 50) + 'px');
+  item.style.top = ((ev.clientY)+ 'px');
 
 
    document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";

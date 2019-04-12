@@ -19,7 +19,7 @@
 
 .line {
 	height: 100%;
-	width: 2%;
+	width: 0.5%;
 	border-left: thick solid black;
 }
 
@@ -46,10 +46,8 @@ div.block + div.block {
 
 .design-container {
 	position: relative;
-	width: 50%;
-	max-width: 50%;
-	max-height: 100%;
 	height: 100%;
+	width: 50%;
 }
 
 
@@ -73,7 +71,7 @@ input {
 }
 
 .btn {
-	width: 15vw;
+	width: 25vw;
 }
 
 nav {
@@ -89,6 +87,4 @@ nav {
 }
 
 .editable {
-	width: 15vw;
-	max-width: 15vw;
 }
