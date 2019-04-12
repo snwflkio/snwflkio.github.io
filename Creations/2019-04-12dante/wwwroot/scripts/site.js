@@ -19,7 +19,9 @@ function drop(ev) {
 
   var data = ev.dataTransfer.getData("text").split(',');
   var design = document.getElementById("section-column");
+  var header = document.getElementById("header");
   var width = window.getComputedStyle(design).width;
+  var height = window.getComputedStyle(design).height;
   var item = document.getElementById(data[0]);
 
   ev.target.appendChild(item);
@@ -27,7 +29,7 @@ function drop(ev) {
   item.style.display = "inline";
   
   item.style.left = ((ev.clientX - width.replace("px","")  - 50) + 'px');
-  item.style.top = ((ev.clientY)+ 'px');
+  item.style.top = ((ev.clientY - header.replace("px","")) + 'px');
 
   document.getElementById(data[0].split('-')[0] + '-setter').style["display"] = "block";
   return false;
