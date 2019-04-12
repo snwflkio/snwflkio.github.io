@@ -12,7 +12,7 @@
 
 .section-column {
 	display: flex;
-	width: 65%;
+	width: 80%;
 	flex-direction: column;
 	horizontal-align: center;
 }
@@ -47,10 +47,11 @@ div.block + div.block {
 .design-container {
 	position: absolute;
 	top: 0%;
-	left: 65%;
-	width: 35%;
+	left: 80%;
+	width: 20%;
 	height: 100%;
 	border: 2px solid slategray;
+	overflow: hidden;
 }
 
 
