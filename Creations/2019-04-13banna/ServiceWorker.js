@@ -1,5 +1,5 @@
-const CACHE = 'TODO';
-const TITLE = 'TODO';
+const CACHE = 'banna';
+const TITLE = 'banna';
 const EXPECTED_CACHE = [CACHE];
 /* Service Worker Lifecycle
  *      - Download

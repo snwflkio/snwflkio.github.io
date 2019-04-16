@@ -1,7 +1,12 @@
+* {
+	font-family: 'Montserrat', 'sans-serif';
+}
+
 .main {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	margin-right: 10px;
 }
 
 .section {
@@ -12,14 +17,14 @@
 
 .section-column {
 	display: flex;
-	width: 50%;
+	width: 80%;
 	flex-direction: column;
 	horizontal-align: center;
 }
 
 .line {
-	height: 100%;
 	width: 2%;
+	height: inherit;
 	border-left: thick solid black;
 }
 
@@ -39,6 +44,20 @@ div.block + div.block {
 		min-width: 2.5vw;
 		max-width: 2.5vw;
 }
+
+.component {
+	position: inherit;
+}
+
+.design-container {
+	position: absolute;
+	left: 80%;
+	width: 20%;
+	height: 80%;
+	border: 2px solid slategray;
+	overflow: hidden;
+}
+
 
 .location {
 	align-content: center;
@@ -63,6 +82,12 @@ input {
 	width: 15vw;
 }
 
+.btn-link {
+	font-size: 25px !important;
+	text-decoration: none !important;
+	color:  #606060 !important;
+}
+
 nav {
 	min-width: 25vw;
 }
@@ -70,6 +95,8 @@ nav {
 .overlay {
 	position: absolute;
 	z-index: 10;
+	top: 0;
+	left: 0;
 	height: 100%;
 	width: 100%;
 	background: rgba(0,0,0,0.5);	
@@ -78,4 +105,18 @@ nav {
 .editable {
 	width: 15vw;
 	max-width: 15vw;
+}
+
+.header {
+	position: relative;
+	display: block;
+	width: 100%;
+	min-width: 100%;
+}
+
+/* Media CSS */
+@media screen and (max-width: 600px) {
+	.btn {
+		width: 50vw;
+	}
 }

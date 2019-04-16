@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "short_name": "TODO",
+  "name": "banna",
+  "short_name": "banna",
   "description": "Some random words here",
   "icons": [
 	{"src" : "icons/512x512.png", "sizes": "512x512", "type": "image/png", "Density": 1},
