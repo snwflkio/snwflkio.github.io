@@ -1,0 +1,70 @@
+<html>
+	<head>
+
+		<!-- Apple Icons -->
+		<!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
+		<link rel="apple-touch-icon" sizes="57x57" href="wwwroot/icons/icon-57x57.png">
+		<!-- iPad and iPad mini @1x -->
+		<link rel="apple-touch-icon" sizes="76x76" href="wwwroot/icons/icon-76x76.png">
+		<!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
+		<link rel="apple-touch-icon" sizes="120x120" href="wwwroot/icons/icon-120x120.png">
+		<!-- iPad and iPad mini @2x -->
+		<link rel="apple-touch-icon" sizes="152x152" href="wwwroot/icons/icon-152x152.png">
+		<!-- iPad Pro -->
+		<link rel="apple-touch-icon" sizes="167x167" href="wwwroot/icons/icon-167x167.png">
+		<!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
+		<link rel="apple-touch-icon" sizes="180x180" href="wwwroot/icons/icon-180x180.png">
+
+
+
+		<!-- Meta tags to allow PWA on all devices  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<!-- Some neccesary assets we need to include  -->
+		<link rel="manifest" href="wwwroot/manifest.json">
+		<link rel="stylesheet" href="wwwroot/css/site.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!-- CDN for Bootstrap, Ajax and other JS things we use -->
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" 
+			integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" 
+			integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Link to our own JavaScript  -->
+		<script src="./wwwroot/scripts/site.js"></script>
+	</head>
+	
+	<body>
+		<div id="content">
+			<h2 draggable="true" ondragstart="drag(event)" id="title-content" class=" " style="position: absolute; display: inline; left: 142px; top: 16px;">Moo</h2><h3 draggable="true" ondragstart="drag(event)" id="subtitle-content" class=" " style="position: absolute; display: inline; left: 43px; top: 47px;">A Story about cows</h3><button id="primary-content" draggable="true" ondragstart="drag(event)" class="btn btn-primary" onclick="window.open('https://en.wikipedia.org/wiki/Cattle','_blank')" style="position: absolute; display: inline; left: 37px; top: 608px;">Learn More about Cows</button><button id="success-content" draggable="true" ondragstart="drag(event)" class="btn btn-success" onclick="window.open('https://s3.amazonaws.com/s3.momsrising.org/images/Cow_close_up2.jpg','_blank')" style="position: absolute; display: inline; left: 40px; top: 561px;">See what one looks like</button><p id="text-content" draggable="true" ongradstart="drag(event)" style="position: absolute; display: inline; left: 8px; top: 99px;">It used to take a person 1 hour to milk 6 cows by hand. Today, a person can milk 100 cows in an hour with modern machines.
+Before modern milk delivery, when people traveled and wanted milk, they had to take their cows with them.
+The main breeds of dairy cows are Holstein, Guernsey, Jersey, Brown Swiss and Ayrshire.
+There are about 11 million cows in America. They will make about 57.5 billion quarts of milk this year.
+It takes 12 pounds of whole milk to make one gallon of ice cream.
+It takes 21.2 pounds of whole milk to make one pound of butter.
+Vanilla is America's favorite ice cream flavor.
+George Washington enjoyed ice cream so much he ran up a $200 ice cream bill one summer.
+The milk mustache advertising campaign was launched in 1995</p>
+		</div>
+	</body>
+</html>
+
+<script>
+	if('serviceWorker' in navigator) {
+		//alert('Welcome to your SNow');
+		navigator.serviceWorker.register('ServiceWorker.js');
+	}
+</script>
